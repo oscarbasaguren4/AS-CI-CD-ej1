@@ -1,0 +1,16 @@
+name: Workflow Ejercicio1
+
+on: push
+
+jobs:
+  tareas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bajar codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar librerias
+        run: pip install pytest
+
+      - name: Ejecutar código
+        run: pytest test.py
