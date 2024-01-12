@@ -3,7 +3,7 @@ name: Ejercicio1
 on: push
 
 jobs:
-  Ejercicio 1:
+  tareas:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
